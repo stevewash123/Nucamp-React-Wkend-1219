@@ -11,7 +11,7 @@ class Bootcamp {
         this.name = name;
         this.level = level;
 
-        if (typeof students !== 'undefined') {
+        if (students && students instanceof Array) {
             this.students = students;
         } else {
             this.students = [];
